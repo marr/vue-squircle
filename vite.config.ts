@@ -5,19 +5,4 @@ import vue from '@vitejs/plugin-vue'
 export default defineConfig({
   base: '/vue-squircle/',
   plugins: [vue()],
-  build: {
-    lib: {
-      entry: './lib/index.ts',
-      name: 'VueSquircle',
-      fileName: 'vue-squircle'
-    },
-    rollupOptions: {
-      external: ['vue'],
-      output: {
-        globals: {
-          vue: 'Vue',
-        },
-      },
-    },
-  },
 });
