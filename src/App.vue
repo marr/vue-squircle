@@ -16,11 +16,11 @@ const height = ref(200);
   <p>A handy, free way to display pleasantly rounded corners in your web app.</p>
   <h3>Default values</h3>
   <Squircle :width="+width" :height="+height">
-    <img :src="`http://picsum.photos/${width}/${height}`" />
+    <img :src="`//picsum.photos/${width}/${height}`" />
   </Squircle>
   <h3>Customized values</h3>
   <Squircle :width="+width" :height="+height" :radius="+radius" :roundness="+roundness">
-    <img :src="`http://picsum.photos/${width}/${height}`" />
+    <img :src="`//picsum.photos/${width}/${height}`" />
   </Squircle>
   <div class="controls">
     <label>
