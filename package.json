@@ -1,9 +1,18 @@
 {
-  "name": "vue-squircle",
+  "name": "@marr/vue-squircle",
   "description": "Better rounded corners for vue3 components",
   "version": "0.0.1",
   "type": "module",
   "author": "David Marr",
+  "files": ["dist"],
+  "main": "./dist/vue-squircle.umd.cjs",
+  "module": "./dist/vue-squircle.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-squircle.js",
+      "require": "./dist/vue-squircle.umd.cjs"
+    }
+  },
   "scripts": {
     "dev": "vite",
     "build": "vue-tsc && vite build",
